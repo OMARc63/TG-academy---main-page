@@ -1,0 +1,151 @@
+@import url(//db.onlinewebfonts.com/c/b86c0f3afb7b6eb1952be1d4c753140c?family=Al-Jazeera-Arabic-Regular);
+* {
+  box-sizing: border-box;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+:root {
+  --white: #fff;
+  --black: #000;
+  --yellow: #FBD675;
+  --gray: #E7E7E7;
+  --grd-gray: #35383E;
+  --grd-black: #080C13;
+}
+body {
+  background: linear-gradient(120deg, var(--grd-gray), var(--grd-black));
+  color: var(--white);
+  font-family : Al-Jazeera-Arabic-Regular;
+}
+
+/* Navbar */
+nav {
+  margin-top: 70px;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+nav .links {
+  flex-grow: 1;
+  margin-right: 7%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+nav .links li {
+  margin-left: 30px;
+  font-size: 20px;
+  transition: .3s;
+  cursor: pointer;
+  line-height: 2.4;
+  border-bottom: 2px solid transparent;
+}
+nav .links li.active, 
+nav .links li:hover {
+  color: var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+}
+nav .login {
+  font-size: 20px;
+  background-color: var(--yellow);
+  padding: 8px 35px;
+  font-family : Al-Jazeera-Arabic-Regular;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 5px 10px #fbd57556;
+}
+nav .login:hover {
+  box-shadow: 0 10px 20px #fbd57556;
+}
+.map {
+  position: absolute;
+  top: 40px;
+  left: -100px;
+  z-index: -1;
+}
+
+/* main section */
+.main {
+  padding: 80px 0;
+}
+.main .container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .info {
+  width: 35%;
+}
+.main .info p {
+  text-align: right;
+  font-size: 46px;
+  margin: 0;
+}
+.main .info p span {
+  color: var(--yellow);
+}
+.main .info p:nth-child(2) {
+  font-size: 58px;
+  font-weight: bold;
+}
+.main .download {
+  margin-top: 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+.main .download img {
+  max-width: 40%;
+  margin-left: 10%;
+  cursor: pointer;
+}
+.main .image {
+  width: 40%;
+}
+
+
+/* footer */
+footer {
+  background-color: var(--gray);
+  color: var(--black);
+  font-size: 20px;
+  padding: 20px 0;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .param {
+  display: flex;
+}
+footer .param p {
+  margin: 0;
+  margin-right: 40px;
+}
+footer .social {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+footer .social p {
+  margin: 0;
+  margin-left: 40px;
+}
+footer .social svg {
+  margin: 0 10px;
+  cursor: pointer;
+}
